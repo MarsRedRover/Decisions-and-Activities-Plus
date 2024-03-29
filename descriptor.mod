@@ -1,0 +1,10 @@
+version="1.0"
+tags={
+	"Balance"
+	"Decisions"
+	"Fixes"
+	"Gameplay"
+	"Historical"
+}
+name="Decisions+"
+supported_version="1.11.3"
