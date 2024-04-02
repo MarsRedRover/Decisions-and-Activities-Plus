@@ -1,38 +1,22 @@
-﻿present_debutante_decision = {
+﻿mars_present_debutante_decision = {
 	picture = "gfx/interface/illustrations/decisions/decision_recruitment.dds"
-	desc = present_debutante_decision_desc
+	desc = mars_present_debutante_decision_desc
 	ai_check_interval = 0
 	cooldown = { years = 10 }
 
 	effect = {
-		#A flag to increase weights for knights in regular guest invites
-		add_character_flag = {
-			flag = invite_knights_decision_active
-			years = 3
+		trigger_event = {
+			id = mars_minor_decisions.0001
+			days = { 20 40 }
 		}
-		#A counter for the free "extra knights", will be reduced by 1 for every extra knight and extra knights stops when it reaches 0
+        #A counter for the free "extra knights", will be reduced by 1 for every extra knight and extra knights stops when it reaches 0
 		set_variable = {
-			name = number_of_invite_knights_countdown
+			name = mars_number_of_debutantes_countdown
 			value = 3 #If this number changes make sure the tooltips change
 			days = 1000
 		}
-		trigger_event = {
-			id = minor_decisions.0001
-			days = { 20 40 }
-		}
-
-		#Effect tooltip
-		if = {
-			limit = { culture = { has_cultural_parameter = martial_custom_male_only_combatant } }
-			custom_tooltip = invite_knights_decision.men.tt
-		}
-		else_if = {
-			limit = { culture = { has_cultural_parameter = martial_custom_female_only_combatant } }
-			custom_tooltip = invite_knights_decision.women.tt
-		}
-		else = {
-			custom_tooltip = invite_knights_decision.warriors.tt
-		}
+        # Effect tooltip
+		custom_tooltip = mars_present_debutante_decision.tt
 	}
 
 	cost = {
