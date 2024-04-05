@@ -1,10 +1,14 @@
 # [Finished]
 
+### [Activities]
+
 ### [Major Decisions]
 
 ### [Minor Decisions]
 
 # [Unfinished]
+
+### [Activities]
 
 ### [Major Decisions]
 	- Unify India:

@@ -6,5 +6,5 @@ tags={
 	"Gameplay"
 	"Historical"
 }
-name="Decisions+"
-supported_version="1.11.3"
+name="Decisions and Activities+"
+supported_version="1.12.4"
