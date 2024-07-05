@@ -15,6 +15,19 @@ Descriptions of minor decisions that, while less impactful individually, can sti
 # [Unfinished]
 
 ### [Activities]
+- Summer Fair: Host a summer fair to entertain your subjects and improve your realm's prosperity.
+- Tiger Hunt: Embark on an adventurous tiger hunt to showcase your bravery and prowess.
+- Grand Hunt: Organize a grand hunt to strengthen your bond with vassals and improve your martial skills.
+- Hold Nerge: Conduct a traditional Mongol nerge, a large-scale hunting event to display your leadership.
+- Hold Ukon Juhla: Celebrate the Finnish festival of Ukon Juhla to honor the god Ukko and ensure a good harvest.
+- Hold Uzgaveness Festival: Host the Uzgaveness festival, a Lithuanian celebration to mark the end of winter.
+- Hold Jarilo Festival: Celebrate the Slavic festival of Jarilo to welcome spring and ensure fertility.
+- Hold Passover: Observe the Jewish festival of Passover to commemorate the Israelites' liberation from Egypt.
+- Celebrate Easter: Celebrate the Christian festival of Easter to mark the resurrection of Jesus Christ.
+- Diwali Feast: Host a Diwali feast to celebrate the Hindu festival of lights, symbolizing the victory of light over darkness.
+- Kali Puja Feast: Conduct a Kali Puja feast to honor the goddess Kali and seek her blessings.
+- Ancestor Worship: Perform rituals to honor your ancestors and seek their guidance and protection.
+- Furisiyaa Tournament: Organize a Furisiyaa tournament, an Islamic chivalric contest to display martial skills and chivalry.
 
 ### [Major Decisions]
 - Unify India: Unite the diverse regions of India under a single empire.
@@ -129,7 +142,7 @@ Descriptions of decisions that aim to unify different regions, cultures, or fact
 Descriptions of decisions related to undertaking specific activities, such as hunts, feasts, or pilgrimages.
 
 ### [Court Decisions]
-- Present debutante: Introduce a young woman to the court for potential marriage.
+- ~~Present debutante: Introduce a young woman to the court for potential marriage.~~
 - Invite holy man to court: Bring a holy man to your court for spiritual guidance or other purposes.
 - Invite noble to court: Invite a noble to join your court, potentially for marriage or alliances.
 - Search for a guru (Hindu): Find a Hindu spiritual teacher to join your court.
