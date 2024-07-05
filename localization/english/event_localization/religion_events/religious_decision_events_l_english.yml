@@ -1,0 +1,10 @@
+﻿l_english:
+  dap_forge_sayyid_docs_decision_desc: "Forge false documents to claim Sayyid ancestry, enhancing your prestige and legitimacy among the faithful."
+  dap_forge_sayyid_docs_decision_tooltip: "You will forge documents to claim Sayyid ancestry."
+  dap_religion_events.0001.title: "Forge Sayyid Documentation"
+  dap_religion_events.0001.desc: "You have forged documents that claim Sayyid ancestry, boosting your prestige and giving you a claim of noble lineage."
+  dap_religion_events.0001.a: "Proceed with the forgery"
+  dap_religion_events.0001.b: "Cancel the plan"
+  dap_forge_sayyid_docs_effect_1: "You have successfully forged Sayyid documentation."
+  dap_forge_sayyid_docs: "Forge Sayyid Documentation"
+  dap_forge_sayyid_docs_confirm: "Are you sure you want to forge Sayyid documentation?"

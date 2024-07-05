@@ -1,0 +1,30 @@
+﻿dap_forge_sayyid_docs = {
+    picture = "gfx/interface/illustrations/decisions/decision_scheming.dds"
+    desc = dap_forge_sayyid_docs_decision_desc
+    selection_tooltip = dap_forge_sayyid_docs_decision_tooltip
+    is_shown = {
+        root.faith.religion = religion:islam_religion   # Ensure the character follows an Islamic faith
+        root = { NOT = { has_trait = sayyid } }
+    }
+    cooldown = {
+        days = 3650
+    }
+    cost = {
+        gold = 200  # Cost of the forgery
+        piety = 250
+    }
+    effect = {
+        custom_tooltip = dap_forge_sayyid_docs_effect_1
+        trigger_event = {
+            id = dap_religion_events.0001
+            days = 7
+        }
+    }
+    ai_check_interval = 240
+    ai_potential = {
+        highest_held_title_tier >= tier_duchy
+    }
+    ai_will_do = {
+        base = 50
+    }
+}

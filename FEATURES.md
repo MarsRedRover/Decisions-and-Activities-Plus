@@ -12,7 +12,7 @@ Descriptions of significant decisions that shape the political and cultural land
 
 Descriptions of minor decisions that, while less impactful individually, can still influence the game in meaningful ways.
 
-# [Unfinished]
+# [TODO LIST]
 
 ### [Activities]
 - Summer Fair: Host a summer fair to entertain your subjects and improve your realm's prosperity.
@@ -143,6 +143,6 @@ Descriptions of decisions related to undertaking specific activities, such as hu
 
 ### [Court Decisions]
 - ~~Present debutante: Introduce a young woman to the court for potential marriage.~~
-- Invite holy man to court: Bring a holy man to your court for spiritual guidance or other purposes.
-- Invite noble to court: Invite a noble to join your court, potentially for marriage or alliances.
+- ~~Invite holy man to court: Bring a holy man to your court for spiritual guidance or other purposes.~~
+- ~~Invite noble to court: Invite a noble to join your court, potentially for marriage or alliances.~~
 - Search for a guru (Hindu): Find a Hindu spiritual teacher to join your court.

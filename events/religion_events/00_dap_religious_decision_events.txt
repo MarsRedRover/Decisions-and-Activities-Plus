@@ -1,0 +1,33 @@
+﻿namespace = dap_religion_events
+
+dap_religion_events.0001 = {
+    type = character_event
+    title = dap_religion_events.0001.title
+    desc = dap_religion_events.0001.desc
+    theme = intrigue
+    override_background = {
+        reference = study
+    }
+    immediate = {
+        # add_trait = sayyid
+    }
+
+    option = {
+        name = dap_religion_events.0001.a
+        ai_chance = {
+            base = 50
+        }
+        add_trait = sayyid  # Add the Sayyid trait
+        add_prestige = 500
+        add_opinion = {
+            target = root.head_of_faith
+            modifier = opinion_granted_sayyid
+        }
+    }
+    option = {
+        name = dap_religion_events.0001.b
+        ai_chance = {
+            base = 20
+        }
+    }
+}

@@ -5,18 +5,75 @@
     is_shown = {
         is_male = yes
         age >= 16
-        is_married = no
     }
     cooldown = {
         days = 3650
     }
     cost = {
-        prestige = 150
+        gold = 100  # Adjusted to represent a portion of yearly income, adjust as needed
     }
     effect = {
         custom_tooltip = dap_debutante_effect_1
         trigger_event = {
             id = dap_present_debutante.0001
+            days = 7
+        }
+    }
+    ai_check_interval = 240
+    ai_potential = {
+        highest_held_title_tier >= tier_duchy
+    }
+    ai_will_do = {
+        base = 50
+    }
+}
+
+dap_invite_nobles = {
+    picture = "gfx/interface/illustrations/decisions/decision_recruitment.dds"
+    desc = dap_invite_nobles_decision_desc
+    selection_tooltip = dap_invite_nobles_decision_tooltip
+    is_shown = {
+        age >= 16
+    }
+    cooldown = {
+        days = 3650
+    }
+    cost = {
+        gold = 100  # Cost is the same as present debutante
+    }
+    effect = {
+        custom_tooltip = dap_invite_nobles_effect_1
+        trigger_event = {
+            id = dap_invite_nobles.0001
+            days = 7
+        }
+    }
+    ai_check_interval = 240
+    ai_potential = {
+        highest_held_title_tier >= tier_duchy
+    }
+    ai_will_do = {
+        base = 50
+    }
+}
+
+dap_invite_holy_man = {
+    picture = "gfx/interface/illustrations/decisions/decision_recruitment.dds"
+    desc = dap_invite_holy_man_decision_desc
+    selection_tooltip = dap_invite_holy_man_decision_tooltip
+    is_shown = {
+        age >= 16
+    }
+    cooldown = {
+        days = 3650
+    }
+    cost = {
+        piety = 100  # Cost is in piety instead of gold
+    }
+    effect = {
+        custom_tooltip = dap_invite_holy_man_effect_1
+        trigger_event = {
+            id = dap_invite_holy_man.0001
             days = 7
         }
     }
