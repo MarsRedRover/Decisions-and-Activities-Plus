@@ -1,12 +1,12 @@
 ﻿namespace = dap_court_decision_events
 
-#dap_present_debutante
+#dap_present_debutante_decision
 # dap_court_decision_events.0001 - Present Debutante
 
-#dap_invite_nobles
+#dap_invite_nobles_decision
 # dap_court_decision_events.0002 - Invite Nobles
 
-#dap_invite_holy_man
+#dap_invite_holy_man_decision
 # dap_court_decision_events.0003 - Invite Holy Man
 
 dap_court_decision_events.0001 = {

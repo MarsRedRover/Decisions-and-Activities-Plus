@@ -70,8 +70,6 @@ Descriptions of minor decisions that, while less impactful individually, can sti
 ### [Minor Decisions]
 - Borrow gold from Jewish merchants: Take a loan from Jewish merchants.
     - Repay money to Jewish merchants: Pay back the loan to Jewish merchants.
-- Borrow gold from burghers: Take a loan from the burgher class.
-    - Repay money to burghers: Pay back the loan to the burghers.
 - Borrow money from Radhanite merchants (Judaism): Take a loan from Radhanite Jewish merchants.
     - Repay money to Radhanite merchants: Pay back the loan to the Radhanite merchants.
 - Sadaqah (Voluntary Charity): Donate money voluntarily as an act of charity.
@@ -132,7 +130,7 @@ Descriptions of decisions that aim to unify different regions, cultures, or fact
 ### [Religious Decisions]
 - Observe Ramadan (Islam): Celebrate the holy month of Ramadan.
 - Issue declaration of repentance (HOF Papacy): Publicly repent for sins and seek forgiveness.
-- Forge Sayyid documentation (Islam): Create false documents claiming Sayyid ancestry.
+- ~~Forge Sayyid documentation (Islam): Create false documents claiming Sayyid ancestry.~~
 - Adopt faith of other clan/tribe: Convert to the religion of another clan or tribe.
 - Mardavij's Legacy (Zoroastrian): Follow in the footsteps of Mardavij and promote Zoroastrianism.
 - Celebrate Passover (Judaism): Observe the Jewish festival of Passover.

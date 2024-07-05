@@ -1,0 +1,51 @@
+﻿namespace = dap_minor_decision_events
+
+#dap_borrow_from_jewish_merchants_decision
+# dap_minor_decision_events.0001 - Borrow from Jewish Merchants
+
+dap_minor_decision_events.0001 = {
+    type = character_event
+    title = dap_minor_decision_events.0001.title
+    desc = dap_minor_decision_events.0001.desc
+    theme = stewardship
+
+    left_portrait = {
+        character = root.realm_priest
+        animation = disapproval
+    }
+    right_portrait = {
+        character = root.faith.religious_head
+        animation = disapproval
+    }
+    immediate = {
+        # if = {
+        #     limit = { has_character_flag = borrow_from_holy_order }
+        #     character = {
+        #         faith = catholic
+        #         title = "k_papal_state"
+        #         opinion_modifier = {
+        #             who = root
+        #             modifier = -30
+        #             years = 10
+        #         }
+        #     }
+        # }
+    }
+
+    option = {
+        name = dap_minor_decision_events.0001.a
+        ai_chance = {
+            base = 100
+        }
+        reverse_add_opinion = {
+            modifier = angry_opinion
+            target = root.realm_priest
+            opinion = -10
+        }
+        reverse_add_opinion = {
+            modifier = angry_opinion
+            target = root.faith.religious_head
+            opinion = -30
+        }
+    }
+}

@@ -7,9 +7,9 @@
   dap_court_decision_events.0001.a: "Choose the first debutante"
   dap_court_decision_events.0001.b: "Choose the second debutante"
   dap_court_decision_events.0001.c: "Choose the third debutante"
-  dap_present_debutante_confirm: "Are you sure you want to present a debutante?"
+  dap_present_debutante_decision_confirm: "Are you sure you want to present a debutante?"
   dap_debutante_effect_1: "You will behold three fair maidens, each worthy of becoming your spouse. Choose wisely, for this decision will shape your future."
-  dap_present_debutante: "Present Debutante"
+  dap_present_debutante_decision: "Present Debutante"
   dap_affair_chance: "Increased chance of an affair with the selected debutante for the next 3 years."
 
  # Invite Nobles
@@ -20,8 +20,8 @@
   dap_court_decision_events.0002.a: "Welcome the nobleman"
   dap_court_decision_events.0002.b: "Dismiss the nobleman"
   dap_invite_nobles_effect_1: "A nobleman will arrive at your court in a few days."
-  dap_invite_nobles: "Invite Noble"
-  dap_invite_nobles_confirm: "Are you sure you want to invite a nobleman?"
+  dap_invite_nobles_decision: "Invite Noble"
+  dap_invite_nobles_decision_confirm: "Are you sure you want to invite a nobleman?"
 
  # Invite Holy Man 
   dap_invite_holy_man_decision_desc: "Extend an invitation to a learned holy man to join your court. His knowledge and piety will be invaluable in guiding your realm's spiritual and intellectual pursuits."
@@ -31,5 +31,17 @@
   dap_court_decision_events.0003.a: "Welcome the holy man"
   dap_court_decision_events.0003.b: "Dismiss the holy man"
   dap_invite_holy_man_effect_1: "A holy man will arrive at your court in a few days."
-  dap_invite_holy_man: "Invite Holy Man"
-  dap_invite_holy_man_confirm: "Are you sure you want to invite a holy man?"
+  dap_invite_holy_man_decision: "Invite Holy Man"
+  dap_invite_holy_man_decision_confirm: "Are you sure you want to invite a holy man?"
+
+ # Borrow from Jewish Merchants
+  dap_borrow_from_jewish_merchants_decision: "Borrow from Jewish Merchants"
+  dap_borrow_from_jewish_merchants_desc: "Borrow money from Jewish merchants to support your realm, but beware of the repercussions."
+  dap_borrow_from_jewish_merchants_tooltip: "Borrowing money from Jewish merchants will cost you 100 Piety and 150 Prestige."
+  borrow_from_jewish_merchants_condition: "Your faith must have a Holy Order with a leader possessing sufficient gold."
+  dap_borrow_from_jewish_merchants_effect_tooltip: "You will receive a loan, but all clergy will have a -10 opinion of you and the Pope will have a -30 opinion of you while you have the debt."
+  dap_borrow_from_jewish_merchants_event_title: "Loan from Jewish Merchants"
+  dap_borrow_from_jewish_merchants_event_desc: "You have borrowed money from Jewish merchants. All clergy now hold you in less esteem, and the Pope is particularly displeased."
+  dap_borrow_from_jewish_merchants_event_option: "Understood"
+  dap_borrow_from_jewish_merchants_event_tooltip: "Clergy opinion: -10, Pope's opinion: -30 for 10 years"
+  dap_borrow_from_jewish_merchants_decision_confirm: "Borrow gold"

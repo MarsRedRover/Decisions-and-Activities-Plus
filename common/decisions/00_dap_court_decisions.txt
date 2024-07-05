@@ -1,4 +1,4 @@
-﻿dap_present_debutante = {
+﻿dap_present_debutante_decision = {
     picture = "gfx/interface/illustrations/decisions/decision_recruitment.dds"
     desc = dap_present_debutante_decision_desc
     selection_tooltip = dap_present_debutante_decision_tooltip
@@ -28,7 +28,7 @@
     }
 }
 
-dap_invite_nobles = {
+dap_invite_nobles_decision = {
     picture = "gfx/interface/illustrations/decisions/decision_recruitment.dds"
     desc = dap_invite_nobles_decision_desc
     selection_tooltip = dap_invite_nobles_decision_tooltip
@@ -57,7 +57,7 @@ dap_invite_nobles = {
     }
 }
 
-dap_invite_holy_man = {
+dap_invite_holy_man_decision = {
     picture = "gfx/interface/illustrations/decisions/decision_recruitment.dds"
     desc = dap_invite_holy_man_decision_desc
     selection_tooltip = dap_invite_holy_man_decision_tooltip

@@ -1,0 +1,65 @@
+﻿dap_borrow_from_jewish_merchants_decision = {
+    picture = "gfx/interface/illustrations/decisions/decision_spend_money.dds"
+
+    desc = dap_borrow_from_jewish_merchants_desc
+    selection_tooltip = dap_borrow_from_jewish_merchants_tooltip
+
+    ai_check_interval = 72
+
+    cost = {
+        piety = 100
+        prestige = 150
+    }
+
+    cooldown = { days = 5475 }
+
+    is_shown = {
+        is_landed = yes
+        highest_held_title_tier > tier_barony
+        has_religion = religion:christianity_religion
+        NOR = {
+            exists = var:loan_amount_owed
+            exists = var:loan_holder
+        }
+    }
+
+    effect = {
+        hidden_effect = {
+            set_variable = {
+                name = amount_to_loan
+                value = holy_order_gold_value
+            }
+            add_character_flag = {
+                flag = borrow_from_holy_order
+                days = 3560
+            }
+            faith = {
+                random_faith_holy_order = {
+                    limit = {
+                        leader = { gold >= holy_order_gold_value }
+                    }
+                    leader = {
+                        save_scope_as = recipient
+                    }
+                    save_scope_as = order
+                }
+            }
+            trigger_event = dap_minor_decision_events.0001
+        }
+        custom_tooltip = dap_borrow_from_jewish_merchants_effect_tooltip
+    }
+
+    ai_potential = {
+        always = yes
+    }
+
+    ai_will_do = {
+        base = 50
+        ai_value_modifier = {
+            ai_zeal = -0.5
+        }
+        ai_value_modifier = {
+            ai_greed = 0.5
+        }
+    }
+}
