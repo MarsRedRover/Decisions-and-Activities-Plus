@@ -23,6 +23,46 @@
         }
     }
 
+    widget = {
+        gui = "dap_decision_view_widget_borrow_gold"
+        controller = decision_option_list_controller
+        decision_to_second_step_button = "BORROW_GOLD_DECISION_NEXT_STEP_BUTTON"
+
+        item = {
+            value = low_amount
+            current_description = {
+                desc = borrow_gold_decision_option_low_amount
+            }
+            icon = "gfx/interface/icons/artifact/artifact_sword.dds"
+
+            ai_chance = {
+                value = 0
+            }
+        }
+        item = {
+            value = med_amount
+            current_description = {
+                desc = borrow_gold_decision_option_med_amount
+            }
+            icon = "gfx/interface/icons/artifact/artifact_sword.dds"
+
+            ai_chance = {
+                value = 0
+            }
+        }
+        item = {
+            value = high_amount
+            current_description = {
+                desc = borrow_gold_decision_option_high_amount
+            }
+            icon = "gfx/interface/icons/artifact/artifact_sword.dds"
+
+            ai_chance = {
+                value = 0
+            }
+        }
+    }
+
     effect = {
         hidden_effect = {
             set_variable = {
