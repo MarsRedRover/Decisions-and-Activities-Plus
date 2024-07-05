@@ -1,0 +1,11 @@
+﻿l_english:
+ dap_present_debutante_decision_desc: "Present three fair maidens before you, and choose one to be your spouse."
+ dap_present_debutante_decision_tooltip: "You will be presented with three debutantes to choose from."
+ dap_present_debutante.title: "Present Debutante"
+ dap_present_debutante.desc: "You are presented with three eligible women. Choose one to be your spouse."
+ dap_present_debutante.a: "Choose the first debutante"
+ dap_present_debutante.b: "Choose the second debutante"
+ dap_present_debutante.c: "Choose the third debutante"
+ dap_present_debutante_confirm: "Are you sure you want to present a debutante?"
+ dap_debutante_effect_1: "You will behold three fair maidens, each worthy of becoming your spouse. Choose wisely, for this decision will shape your future."
+ dap_present_debutante: "Present Debutante"

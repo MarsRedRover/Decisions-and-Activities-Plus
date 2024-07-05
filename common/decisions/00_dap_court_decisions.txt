@@ -1,0 +1,30 @@
+﻿dap_present_debutante = {
+    picture = "gfx/interface/illustrations/decisions/decision_recruitment.dds"
+    desc = dap_present_debutante_decision_desc
+    selection_tooltip = dap_present_debutante_decision_tooltip
+    is_shown = {
+        is_male = yes
+        age >= 16
+        is_married = no
+    }
+    cooldown = {
+        days = 3650
+    }
+    cost = {
+        prestige = 150
+    }
+    effect = {
+        custom_tooltip = dap_debutante_effect_1
+        trigger_event = {
+            id = dap_present_debutante.0001
+            days = 7
+        }
+    }
+    ai_check_interval = 240
+    ai_potential = {
+        highest_held_title_tier >= tier_duchy
+    }
+    ai_will_do = {
+        base = 50
+    }
+}

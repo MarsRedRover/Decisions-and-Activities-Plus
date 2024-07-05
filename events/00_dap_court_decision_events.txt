@@ -1,0 +1,189 @@
+﻿namespace = dap_present_debutante
+
+dap_present_debutante.0001 = {
+    type = character_event
+    title = dap_present_debutante.title
+    desc = dap_present_debutante.desc
+    theme = realm
+    override_background = {
+        reference = throne_room
+    }
+    left_portrait = {
+        character = scope:target1
+        animation = personality_content
+    }
+    right_portrait = {
+        character = scope:target2
+        animation = personality_content
+    }
+    lower_center_portrait = {
+        character = scope:target3
+        animation = personality_content
+    }
+    immediate = {
+        create_character = {
+            gender = female
+            save_scope_as = target1
+            age = { 16 25 }
+            location = root.location
+            random_traits = yes
+            dynasty = generate
+            faith = root.faith
+            culture = root.culture
+            diplomacy = {
+                min_template_decent_skill
+                max_template_decent_skill
+            }
+        }
+        create_character = {
+            gender = female
+            save_scope_as = target2
+            age = { 16 25 }
+            location = root.location
+            random_traits = yes
+            dynasty = generate
+            faith = root.faith
+            culture = root.culture
+            diplomacy = {
+                min_template_decent_skill
+                max_template_decent_skill
+            }
+        }
+        create_character = {
+            gender = female
+            save_scope_as = target3
+            age = { 16 25 }
+            location = root.location
+            random_traits = yes
+            dynasty = generate
+            faith = root.faith
+            culture = root.culture
+            diplomacy = {
+                min_template_decent_skill
+                max_template_decent_skill
+            }
+        }
+        hidden_effect = {
+            scope:target1 = {
+                remove_trait = giant
+                remove_trait = scaly
+                remove_trait = clubfooted
+                remove_trait = dwarf
+                remove_trait = hunchbacked
+                remove_trait = spindly
+                remove_trait = albino
+                remove_trait = infertile
+                remove_trait = wheezing
+                remove_trait = bleeder
+                remove_trait = depressed_genetic
+                remove_trait = lunatic_genetic
+                remove_trait = possessed_genetic
+                remove_trait = lisping
+                remove_trait = stuttering
+                remove_trait = beauty_bad_1
+                remove_trait = beauty_bad_2
+                remove_trait = intellect_bad_1
+                remove_trait = intellect_bad_2
+                remove_trait = physique_bad_1
+                remove_trait = physique_bad_2
+                add_character_flag = { flag = no_headgear years = 1 }
+                dynasty = { add_dynasty_prestige = 2000 }
+            }
+            scope:target2 = {
+                remove_trait = giant
+                remove_trait = scaly
+                remove_trait = clubfooted
+                remove_trait = dwarf
+                remove_trait = hunchbacked
+                remove_trait = spindly
+                remove_trait = albino
+                remove_trait = infertile
+                remove_trait = wheezing
+                remove_trait = bleeder
+                remove_trait = depressed_genetic
+                remove_trait = lunatic_genetic
+                remove_trait = possessed_genetic
+                remove_trait = lisping
+                remove_trait = stuttering
+                remove_trait = beauty_bad_1
+                remove_trait = beauty_bad_2
+                remove_trait = intellect_bad_1
+                remove_trait = intellect_bad_2
+                remove_trait = physique_bad_1
+                remove_trait = physique_bad_2
+                add_character_flag = { flag = no_headgear years = 1 }
+                dynasty = { add_dynasty_prestige = 2000 }
+            }
+            scope:target3 = {
+                remove_trait = giant
+                remove_trait = scaly
+                remove_trait = clubfooted
+                remove_trait = dwarf
+                remove_trait = hunchbacked
+                remove_trait = spindly
+                remove_trait = albino
+                remove_trait = infertile
+                remove_trait = wheezing
+                remove_trait = bleeder
+                remove_trait = depressed_genetic
+                remove_trait = lunatic_genetic
+                remove_trait = possessed_genetic
+                remove_trait = lisping
+                remove_trait = stuttering
+                remove_trait = beauty_bad_1
+                remove_trait = beauty_bad_2
+                remove_trait = intellect_bad_1
+                remove_trait = intellect_bad_2
+                remove_trait = physique_bad_1
+                remove_trait = physique_bad_2
+                add_character_flag = { flag = no_headgear years = 1 }
+                dynasty = { add_dynasty_prestige = 2000 }
+            }
+        }
+    }
+    option = {
+        name = dap_present_debutante.a
+        ai_chance = {
+            base = 50
+        }
+        add_courtier = scope:target1
+        hidden_effect = {
+            scope:target2 = {
+                death = { death_reason = death_disappearance }
+            }
+            scope:target3 = {
+                death = { death_reason = death_disappearance }
+            }
+        }
+    }
+    option = {
+        name = dap_present_debutante.b
+        ai_chance = {
+            base = 30
+        }
+        add_courtier = scope:target2
+        hidden_effect = {
+            scope:target1 = {
+                death = { death_reason = death_disappearance }
+            }
+            scope:target3 = {
+                death = { death_reason = death_disappearance }
+            }
+        }
+    }
+    option = {
+        name = dap_present_debutante.c
+        ai_chance = {
+            base = 40
+        }
+        add_courtier = scope:target3
+        hidden_effect = {
+            scope:target1 = {
+                death = { death_reason = death_disappearance }
+            }
+            scope:target2 = {
+                death = { death_reason = death_disappearance }
+            }
+        }
+    }
+}
