@@ -2,112 +2,134 @@
 
 ### [Activities]
 
+Detailed descriptions of various activities available to characters, enhancing their abilities and influencing their relationships and status.
+
 ### [Major Decisions]
 
+Descriptions of significant decisions that shape the political and cultural landscape of the game world.
+
 ### [Minor Decisions]
+
+Descriptions of minor decisions that, while less impactful individually, can still influence the game in meaningful ways.
 
 # [Unfinished]
 
 ### [Activities]
 
 ### [Major Decisions]
-	- Unify India:
-	- Unify Islam:
-	- Restore Eastern Rome:
-	- Restore Western Rome:
-	- Establish Cairo:
-	- Form Russian Empire:
-	- Form Bulgarian Empire:
-	- Form Serbian Empire:
-		- Restore Serbian Empire:
-	- Gather the lands of the Eastern Marches:
-	- Form Grand Duchy of Saxony:
-	- Form Grand Duchy of Franconia:
-	- Form Grand Duchy of Swabia:
-	- Form Grand Duchy of Lithuania:
-	- Form Principality of Antioch:
-	- Form Kingdom of Cyprus:
-	- Form Kingdom of Bosnia:
-	- Form the Hansa:
-	- Form Timurids:
-	- Form Celtic Empire:
-	- Form the Latin Empire:
-	- Form the Outremer Empire:
-	- Form Angevin Empire:
-	- Form Westphalia:
-	- Form Delhi Sultanate:
-	- Form Two Sicilies:
-	- Form the Slavic Union:
-	- Form the Kingdom of Israel:
-	- Create Fraticelli Papacy:
-	- Create Iconoclast Patriarchy:
-	- Embrace Iconoclasm:
-	- Restore priesthood (Zoroastrian):
-	- Build the third temple (Judaism):
-	- Restore the high priesthood (Judaism):
-	- Delve into the classics:
-	- Form honor guard:
+- Unify India: Unite the diverse regions of India under a single empire.
+- Unify Islam: Bring together the Islamic world under one leadership.
+- Restore Eastern Rome: Rebuild and restore the glory of the Eastern Roman Empire.
+- Restore Western Rome: Reconstruct the Western Roman Empire to its former might.
+- Establish Cairo: Develop Cairo into a major cultural and political center.
+- Form Russian Empire: Consolidate various Russian principalities into a single empire.
+- Form Bulgarian Empire: Unite the Bulgarian territories under one empire.
+- Form Serbian Empire: Establish a Serbian Empire by uniting Serbian lands.
+    - Restore Serbian Empire: Restore the historic Serbian Empire to its previous grandeur.
+- Gather the lands of the Eastern Marches: Consolidate the eastern frontier territories.
+- Form Grand Duchy of Saxony: Create a powerful duchy in Saxony.
+- Form Grand Duchy of Franconia: Establish a grand duchy in the region of Franconia.
+- Form Grand Duchy of Swabia: Develop Swabia into a significant grand duchy.
+- Form Grand Duchy of Lithuania: Unite Lithuanian lands into a grand duchy.
+- Form Principality of Antioch: Establish a principality in the historic city of Antioch.
+- Form Kingdom of Cyprus: Create a kingdom centered on the island of Cyprus.
+- Form Kingdom of Bosnia: Unify Bosnian territories into a single kingdom.
+- Form the Hansa: Establish the Hanseatic League for trade and mutual protection.
+- Form Timurids: Create a powerful Timurid state in Central Asia.
+- Form Celtic Empire: Unite the Celtic regions into a single empire.
+- Form the Latin Empire: Establish a Latin Empire in the eastern Mediterranean.
+- Form the Outremer Empire: Create an empire in the Crusader states of the Levant.
+- Form Angevin Empire: Unite English and French territories under one crown.
+- Form Westphalia: Establish the state of Westphalia in central Europe.
+- Form Delhi Sultanate: Create a sultanate in the region of Delhi.
+- Form Two Sicilies: Unite the Kingdom of Sicily and the Kingdom of Naples.
+- Form the Slavic Union: Bring together Slavic peoples under one union.
+- Form the Kingdom of Israel: Re-establish the historic Kingdom of Israel.
+- Create Fraticelli Papacy: Establish a papacy for the Fraticelli faith.
+- Create Iconoclast Patriarchy: Set up a patriarchy for the Iconoclast belief.
+- Embrace Iconoclasm: Adopt the Iconoclast movement officially.
+- Restore priesthood (Zoroastrian): Re-establish the Zoroastrian priesthood.
+- Build the third temple (Judaism): Construct the third temple in Jerusalem.
+- Restore the high priesthood (Judaism): Reinstate the Jewish high priesthood.
+- Delve into the classics: Promote the study of classical works.
+- Form honor guard: Establish an elite unit of personal bodyguards.
 
 ### [Minor Decisions]
-	- Borrow gold from Jewish merchants:
-		- Repay money to Jewish merchants:
-	- Borrow gold from burghers:
-		- Repay money to burghers:
-	- Borrow money from Radhanite merchants (Judaism):
-		- Repay money to Radhanite merchants:
-	- Sadaqah (Voluntary Charity):
-	- Expel the Jews:
-	- Welcome the Jews:
-	- Raise honor guard:
-	- Raise tribal army:
-	- Raise defensive army:
-	- Raise offensive army:
-	- Organize Varangian Guard:
-	
+- Borrow gold from Jewish merchants: Take a loan from Jewish merchants.
+    - Repay money to Jewish merchants: Pay back the loan to Jewish merchants.
+- Borrow gold from burghers: Take a loan from the burgher class.
+    - Repay money to burghers: Pay back the loan to the burghers.
+- Borrow money from Radhanite merchants (Judaism): Take a loan from Radhanite Jewish merchants.
+    - Repay money to Radhanite merchants: Pay back the loan to the Radhanite merchants.
+- Sadaqah (Voluntary Charity): Donate money voluntarily as an act of charity.
+- Expel the Jews: Forcefully expel the Jewish population from your realm.
+- Welcome the Jews: Invite and settle Jewish people in your lands.
+- Raise honor guard: Recruit an elite unit for personal protection.
+- Raise tribal army: Muster a tribal army for military campaigns.
+- Raise defensive army: Assemble a defensive force to protect your lands.
+- Raise offensive army: Gather an offensive army for aggressive campaigns.
+- Organize Varangian Guard: Establish or reorganize the Varangian Guard for service.
+
 ### [Artifact Decisions]
 
+Descriptions of decisions related to artifacts that can be found or crafted, impacting the player's abilities or prestige.
+
 ### [Cultural Decisions]
-	- Convert to new culture:
+- Convert to new culture: Change your primary culture to a different one.
 
 ### [Diarchy Decisions]
 
+Descriptions of decisions that involve a dual rulership or co-rulership system, affecting the governance of the player's realm.
+
 ### [Dynastic Decisions]
+
+Descriptions of decisions that affect the player's dynasty, such as succession laws, family alliances, and titles.
 
 ### [Guest Decisions]
 
+Descriptions of decisions involving guests at the player's court, such as inviting or expelling them.
+
 ### [Holy Order Decisions]
-	- Donate to holy order:
-	- Expel holy order:
-	- Fund (Teutonic) incursion into Duchy of Prussia:
-	- Fund (Teutonic & Livonian) incursion into Kingdom of Estonia:
-	- Fund (Teutonic & Livonian) incursion into Duchy of Samogitia (Lithuania):
-	- Vassalize holy order (Knights Templar or Knights Hospitaller):
-	- Militarize the Brotherhood of the Holy Sepulchre (Orthodox):
-	- Create holy order (Order of Saint Anthony or Order of Saint Addai) (Miasphysite/Nestorian):
-	- Form the army of light (Manichean):
-	- Form the Followers of Arjuna (Hindu):
-	- Form the Chosen of Ashoka (Buddhist):
-	- Form the Bulls of Rishabha (Jain):
-	- Form the Children of Dralha (Reformed Bon):
-	
+- Donate to holy order: Contribute funds to a holy order.
+- Expel holy order: Remove a holy order from your lands.
+- Fund (Teutonic) incursion into Duchy of Prussia: Support the Teutonic Knights' campaign in Prussia.
+- Fund (Teutonic & Livonian) incursion into Kingdom of Estonia: Back the Teutonic and Livonian campaign in Estonia.
+- Fund (Teutonic & Livonian) incursion into Duchy of Samogitia (Lithuania): Finance the Teutonic and Livonian efforts in Samogitia, Lithuania.
+- Vassalize holy order (Knights Templar or Knights Hospitaller): Bring a holy order under your control as a vassal.
+- Militarize the Brotherhood of the Holy Sepulchre (Orthodox): Arm and organize the Brotherhood of the Holy Sepulchre.
+- Create holy order (Order of Saint Anthony or Order of Saint Addai) (Miasphysite/Nestorian): Establish a new holy order for the Miasphysite or Nestorian faiths.
+- Form the army of light (Manichean): Raise a Manichean holy army.
+- Form the Followers of Arjuna (Hindu): Establish a Hindu holy order dedicated to Arjuna.
+- Form the Chosen of Ashoka (Buddhist): Create a Buddhist holy order inspired by Ashoka.
+- Form the Bulls of Rishabha (Jain): Form a Jain holy order named after Rishabha.
+- Form the Children of Dralha (Reformed Bon): Establish a Reformed Bon holy order.
+
 ### [Lifestyle Decisions]
+
+Descriptions of decisions that impact the player's lifestyle focus and traits.
 
 ### [Trait Decisions]
 
+Descriptions of decisions related to acquiring, removing, or modifying character traits.
+
 ### [Unity Decisions]
 
+Descriptions of decisions that aim to unify different regions, cultures, or factions within the game.
+
 ### [Religious Decisions]
-	- Observe Ramadan (Islam):
-	- Issue declaration of repentance (HOF Papacy):
-	- Forge Sayyid documentation (Islam):
-	- Adopt faith of other clan/tribe:
-	- Mardavij's Legacy (Zoroastrian):
-	- Celebrate Passover (Judaism):
-	
+- Observe Ramadan (Islam): Celebrate the holy month of Ramadan.
+- Issue declaration of repentance (HOF Papacy): Publicly repent for sins and seek forgiveness.
+- Forge Sayyid documentation (Islam): Create false documents claiming Sayyid ancestry.
+- Adopt faith of other clan/tribe: Convert to the religion of another clan or tribe.
+- Mardavij's Legacy (Zoroastrian): Follow in the footsteps of Mardavij and promote Zoroastrianism.
+- Celebrate Passover (Judaism): Observe the Jewish festival of Passover.
+
 ### [Activity Decisions]
 
+Descriptions of decisions related to undertaking specific activities, such as hunts, feasts, or pilgrimages.
+
 ### [Court Decisions]
-	- Present debutante:
-	- Invite holy man to court:
-	- Invite noble to court:
-	- Search for a guru (Hindu):
+- Present debutante: Introduce a young woman to the court for potential marriage.
+- Invite holy man to court: Bring a holy man to your court for spiritual guidance or other purposes.
+- Invite noble to court: Invite a noble to join your court, potentially for marriage or alliances.
+- Search for a guru (Hindu): Find a Hindu spiritual teacher to join your court.
