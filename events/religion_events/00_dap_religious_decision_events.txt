@@ -1,5 +1,8 @@
 ﻿namespace = dap_religion_events
 
+#dap_forge_sayyid_docs
+# dap_religion_events.0001 - Forge Sayyid Documents
+
 dap_religion_events.0001 = {
     type = character_event
     title = dap_religion_events.0001.title
@@ -17,13 +20,46 @@ dap_religion_events.0001 = {
         ai_chance = {
             base = 50
         }
-        add_trait = sayyid  # Add the Sayyid trait
         add_prestige = 500
-        add_opinion = {
-            target = root.head_of_faith
-            modifier = opinion_granted_sayyid
+        add_trait = sayyid
+
+        # Apply traits to all descendants
+        every_child = {
+            add_trait = sayyid
+            every_child = {
+                add_trait = sayyid
+                every_child = {
+                    add_trait = sayyid
+                    every_child = {
+                        add_trait = sayyid
+                        every_child = {
+                            add_trait = sayyid
+                        }
+                    }
+                }
+            }
+        }        
+        if = {
+            limit = { 
+                AND = {
+                    exists = faith.religious_head
+                    root = {
+                        NOT = {
+                            faith.religious_head = root
+                        }
+                    }
+                }
+            }
+            root.faith.religious_head = {
+                add_opinion = {
+                    target = root
+                    modifier = pleased_opinion
+                    opinion = 15
+                }
+            }
         }
     }
+
     option = {
         name = dap_religion_events.0001.b
         ai_chance = {

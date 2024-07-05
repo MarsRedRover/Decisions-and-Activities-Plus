@@ -15,7 +15,7 @@
     effect = {
         custom_tooltip = dap_debutante_effect_1
         trigger_event = {
-            id = dap_present_debutante.0001
+            id = dap_court_decision_events.0001
             days = 7
         }
     }
@@ -44,7 +44,7 @@ dap_invite_nobles = {
     effect = {
         custom_tooltip = dap_invite_nobles_effect_1
         trigger_event = {
-            id = dap_invite_nobles.0001
+            id = dap_court_decision_events.0001
             days = 7
         }
     }
@@ -73,7 +73,7 @@ dap_invite_holy_man = {
     effect = {
         custom_tooltip = dap_invite_holy_man_effect_1
         trigger_event = {
-            id = dap_invite_holy_man.0001
+            id = dap_court_decision_events.0001
             days = 7
         }
     }

@@ -1,5 +1,5 @@
 ﻿dap_forge_sayyid_docs = {
-    picture = "gfx/interface/illustrations/decisions/decision_scheming.dds"
+    picture = "gfx/interface/illustrations/decisions/decision_misc.dds"
     desc = dap_forge_sayyid_docs_decision_desc
     selection_tooltip = dap_forge_sayyid_docs_decision_tooltip
     is_shown = {
