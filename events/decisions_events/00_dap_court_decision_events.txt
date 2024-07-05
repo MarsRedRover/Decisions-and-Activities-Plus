@@ -212,10 +212,10 @@ dap_court_decision_events.0001 = {
     }
 }
 
-dap_invite_nobles.0001 = {
+dap_court_decision_events.0002 = {
     type = character_event
-    title = dap_invite_nobles.title
-    desc = dap_invite_nobles.desc
+    title = dap_court_decision_events.0002.title
+    desc = dap_court_decision_events.0002.desc
     theme = realm
     override_background = {
         reference = throne_room
@@ -247,14 +247,14 @@ dap_invite_nobles.0001 = {
     }
 
     option = {
-        name = dap_invite_nobles.a
+        name = dap_court_decision_events.0002.a
         ai_chance = {
             base = 50
         }
         add_courtier = scope:target
     }
     option = {
-        name = dap_invite_nobles.b
+        name = dap_court_decision_events.0002.b
         ai_chance = {
             base = 20
         }
@@ -266,10 +266,10 @@ dap_invite_nobles.0001 = {
     }
 }
 
-dap_invite_holy_man.0001 = {
+dap_court_decision_events.0003 = {
     type = character_event
-    title = dap_invite_holy_man.title
-    desc = dap_invite_holy_man.desc
+    title = dap_court_decision_events.0003.title
+    desc = dap_court_decision_events.0003.desc
     theme = realm
     override_background = {
         reference = throne_room
@@ -302,14 +302,14 @@ dap_invite_holy_man.0001 = {
     }
 
     option = {
-        name = dap_invite_holy_man.a
+        name = dap_court_decision_events.0003.a
         ai_chance = {
             base = 50
         }
         add_courtier = scope:target
     }
     option = {
-        name = dap_invite_holy_man.b
+        name = dap_court_decision_events.0003.b
         ai_chance = {
             base = 20
         }

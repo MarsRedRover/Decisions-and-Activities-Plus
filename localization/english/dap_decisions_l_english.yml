@@ -1,4 +1,5 @@
 ﻿l_english:
+ # Present Debutante
   dap_court_decision_events_decision_desc: "Present three fair maidens before you, and choose one to be your spouse."
   dap_court_decision_events_decision_tooltip: "You will be presented with three debutantes to choose from."
   dap_court_decision_events.0001.title: "Present Debutante"
@@ -8,23 +9,27 @@
   dap_court_decision_events.0001.c: "Choose the third debutante"
   dap_court_decision_events_confirm: "Are you sure you want to present a debutante?"
   dap_debutante_effect_1: "You will behold three fair maidens, each worthy of becoming your spouse. Choose wisely, for this decision will shape your future."
-  dap_court_decision_events: "Present Debutante"
+  dap_present_debutante: "Present Debutante"
   dap_affair_chance: "Increased chance of an affair with the selected debutante for the next 3 years."
+
+ # Invite Nobles
   dap_invite_nobles_decision_desc: "Extend an invitation to a nobleman of excellent stewardship to join your court. Their expertise and counsel will be invaluable in managing your realm and ensuring its prosperity."
   dap_invite_nobles_decision_tooltip: "You will invite a nobleman to your court."
-  dap_invite_nobles.title: "Invite Noble"
-  dap_invite_nobles.desc: "A nobleman of distinguished upbringing and notable stewardship skills has arrived at your court. Embrace his arrival to strengthen your rule and benefit from his wisdom and experience in the management of your lands."
-  dap_invite_nobles.a: "Welcome the nobleman"
-  dap_invite_nobles.b: "Dismiss the nobleman"
+  dap_court_decision_events.0002.title: "Invite Noble"
+  dap_court_decision_events.0002.desc: "A nobleman of distinguished upbringing and notable stewardship skills has arrived at your court. Embrace his arrival to strengthen your rule and benefit from his wisdom and experience in the management of your lands."
+  dap_court_decision_events.0002.a: "Welcome the nobleman"
+  dap_court_decision_events.0002.b: "Dismiss the nobleman"
   dap_invite_nobles_effect_1: "A nobleman will arrive at your court in a few days."
   dap_invite_nobles: "Invite Noble"
   dap_invite_nobles_confirm: "Are you sure you want to invite a nobleman?"
+
+ # Invite Holy Man 
   dap_invite_holy_man_decision_desc: "Extend an invitation to a learned holy man to join your court. His knowledge and piety will be invaluable in guiding your realm's spiritual and intellectual pursuits."
   dap_invite_holy_man_decision_tooltip: "You will invite a holy man to your court."
-  dap_invite_holy_man.title: "Invite Holy Man"
-  dap_invite_holy_man.desc: "A holy man of great learning and spiritual insight has arrived at your court. Embrace his presence to benefit from his theological wisdom and scholarly expertise."
-  dap_invite_holy_man.a: "Welcome the holy man"
-  dap_invite_holy_man.b: "Dismiss the holy man"
+  dap_court_decision_events.0003.title: "Invite Holy Man"
+  dap_court_decision_events.0003.desc: "A holy man of great learning and spiritual insight has arrived at your court. Embrace his presence to benefit from his theological wisdom and scholarly expertise."
+  dap_court_decision_events.0003.a: "Welcome the holy man"
+  dap_court_decision_events.0003.b: "Dismiss the holy man"
   dap_invite_holy_man_effect_1: "A holy man will arrive at your court in a few days."
   dap_invite_holy_man: "Invite Holy Man"
   dap_invite_holy_man_confirm: "Are you sure you want to invite a holy man?"
