@@ -30,9 +30,11 @@
 
         item = {
             value = low_amount
+            is_valid = {}
             current_description = {
                 desc = borrow_gold_decision_option_low_amount
             }
+            # localization = 
             icon = "gfx/interface/icons/artifact/artifact_sword.dds"
 
             ai_chance = {
@@ -41,6 +43,7 @@
         }
         item = {
             value = med_amount
+            is_valid = {}
             current_description = {
                 desc = borrow_gold_decision_option_med_amount
             }
