@@ -55,6 +55,10 @@ dap_minor_decision_events.0001 = {
 				name = dap_amount_to_loan_jew
 				value = root.tiny_gold_value
 			}
+            set_variable = {
+                name = dap_years_since_loan
+                value = 0
+            }
 			add_character_flag = dap_borrow_from_jewish_merchants
             scope:lender = { death = { death_reason = death_disappearance } }
         }
@@ -86,6 +90,10 @@ dap_minor_decision_events.0001 = {
 				name = dap_amount_to_loan_jew
 				value = root.medium_gold_value
 			}
+            set_variable = {
+                name = dap_years_since_loan
+                value = 0
+            }
 			add_character_flag = dap_borrow_from_jewish_merchants
             scope:lender = { death = { death_reason = death_disappearance } }
         }
@@ -117,6 +125,10 @@ dap_minor_decision_events.0001 = {
 				name = dap_amount_to_loan_jew
 				value = root.massive_gold_value
 			}
+            set_variable = {
+                name = dap_years_since_loan
+                value = 0
+            }
 			add_character_flag = dap_borrow_from_jewish_merchants
             scope:lender = { death = { death_reason = death_disappearance } }
         }
@@ -148,6 +160,10 @@ dap_minor_decision_events.0001 = {
 				name = dap_amount_to_loan_jew
 				value = root.monumental_gold_value
 			}
+            set_variable = {
+                name = dap_years_since_loan
+                value = 0
+            }
 			add_character_flag = dap_borrow_from_jewish_merchants
             scope:lender = { death = { death_reason = death_disappearance } }
         }
@@ -200,8 +216,11 @@ dap_minor_decision_events.0002 = {
             set_variable = {
 				name = dap_amount_to_loan_jew
 				value = root.massive_gold_value
-				# days = yes
 			}
+            set_variable = {
+                name = dap_years_since_loan
+                value = 0
+            }
 			add_character_flag = dap_borrow_from_jewish_merchants
             scope:lender = { death = { death_reason = death_disappearance } }
         }
@@ -223,6 +242,10 @@ dap_minor_decision_events.0002 = {
 				name = dap_amount_to_loan_jew
 				value = root.monumental_gold_value
 			}
+            set_variable = {
+                name = dap_years_since_loan
+                value = 0
+            }
 			add_character_flag = dap_borrow_from_jewish_merchants
             scope:lender = { death = { death_reason = death_disappearance } }
         }
@@ -269,7 +292,20 @@ dap_minor_decision_events.0003 = {
         }
         hidden_effect = {
             remove_variable = dap_amount_to_loan_jew
+            remove_variable = dap_years_since_loan
 			remove_character_flag = dap_borrow_from_jewish_merchants
+            if = {
+                limit = { has_character_flag = dap_amount_to_loan_jew_standing_neutral }
+                remove_character_flag = dap_amount_to_loan_jew_standing_neutral
+            }
+            if = {
+                limit = { has_character_flag = dap_amount_to_loan_jew_standing_unfavorable }
+                remove_character_flag = dap_amount_to_loan_jew_standing_unfavorable
+            }
+            if = {
+                limit = { has_character_flag = dap_amount_to_loan_jew_standing_hostile }
+                remove_character_flag = dap_amount_to_loan_jew_standing_hostile
+            }
             scope:lender = { death = { death_reason = death_disappearance } }
         }
     }

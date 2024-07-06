@@ -1,11 +1,10 @@
 ﻿# Called from code once a year for "playable" (count+) characters.
 # Root is the character
 yearly_playable_pulse = {
-    on_actions = { dap_yearly_interest_increase }
-}
-
-five_year_playable_pulse = {
-    on_actions = { dap_five_year_interest_check }
+    on_actions = { 
+        dap_yearly_interest_increase 
+        dap_five_year_interest_check
+    }
 }
 
 dap_yearly_interest_increase = {
@@ -16,6 +15,10 @@ dap_yearly_interest_increase = {
                 name = dap_amount_to_loan_jew
                 multiply = 1.06
             }
+            change_variable = {
+                name = dap_years_since_loan
+                add = 1
+            }
         }
     }
 }
@@ -24,11 +27,35 @@ dap_five_year_interest_check = {
     effect = {
         if = {
             limit = { has_character_flag = dap_borrow_from_jewish_merchants }
-            add_character_flag = dap_amount_to_loan_jew_year_five
-        }
-        if = {
-            limit = { has_character_flag = dap_amount_to_loan_jew_year_five } 
-            add_character_flag = dap_amount_to_loan_jew_year_ten
+            if = {
+                limit = {
+                    var:dap_years_since_loan >= 1 
+                    var:dap_years_since_loan < 5
+                    NOT = { has_character_flag = dap_amount_to_loan_jew_standing_neutral }
+                }
+                remove_character_flag = dap_amount_to_loan_jew_standing_unfavorable
+                remove_character_flag = dap_amount_to_loan_jew_standing_hostile
+                add_character_flag = dap_amount_to_loan_jew_standing_neutral
+            }
+            else_if = {
+                limit = {
+                    var:dap_years_since_loan >= 5
+                    var:dap_years_since_loan < 10
+                    NOT = { has_character_flag = dap_amount_to_loan_jew_standing_unfavorable }
+                }
+                remove_character_flag = dap_amount_to_loan_jew_standing_neutral
+                remove_character_flag = dap_amount_to_loan_jew_standing_hostile
+                add_character_flag = dap_amount_to_loan_jew_standing_unfavorable
+            }
+            else_if = {
+                limit = { 
+                    var:dap_years_since_loan >= 10
+                    NOT = { has_character_flag = dap_amount_to_loan_jew_standing_hostile }
+                }
+                remove_character_flag = dap_amount_to_loan_jew_standing_neutral
+                remove_character_flag = dap_amount_to_loan_jew_standing_unfavorable
+                add_character_flag = dap_amount_to_loan_jew_standing_hostile
+            }
         }
     }
 }

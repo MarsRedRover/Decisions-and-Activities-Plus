@@ -1,3 +1,5 @@
 Finish:
 Latin Empire
 Jewish Loans
+    - If loan year is 5, a warning is given to pay the loan. 
+    - If loan year is 10, a threat is given to pay the loan.
