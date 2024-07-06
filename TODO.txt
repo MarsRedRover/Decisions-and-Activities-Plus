@@ -1,5 +1,11 @@
 Finish:
 Latin Empire
 Jewish Loans
-    - If loan year is 5, a warning is given to pay the loan. 
+    - If loan year is 5, a warning is given to pay the loan.
+        Merchant template char created, gains a hook on loan holder. 
+        Merchant char starts 1 hook scheme. 
     - If loan year is 10, a threat is given to pay the loan.
+        Merchant template char created, starts murder scheme on loan holder.
+    - If loan holder dies and heir is immediate family while landed.
+        Heir gets loan inherited.
+        Loan year is 0
