@@ -9,6 +9,12 @@
 #dap_invite_holy_man_decision
 # dap_court_decision_events.0003 - Invite Holy Man
 
+
+##############################
+# Present Debutante
+# by Marsonus
+##############################
+
 dap_court_decision_events.0001 = {
     type = character_event
     title = dap_court_decision_events.0001.title
@@ -221,6 +227,12 @@ dap_court_decision_events.0001 = {
     }
 }
 
+
+##############################
+# Invite Nobles
+# by Marsonus
+##############################
+
 dap_court_decision_events.0002 = {
     type = character_event
     title = dap_court_decision_events.0002.title
@@ -273,6 +285,12 @@ dap_court_decision_events.0002 = {
         }
     }
 }
+
+
+##############################
+# Invite Holy Man
+# by Marsonus
+##############################
 
 dap_court_decision_events.0003 = {
     type = character_event

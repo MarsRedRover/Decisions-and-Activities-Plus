@@ -73,7 +73,7 @@ dap_invite_holy_man_decision = {
     effect = {
         custom_tooltip = dap_invite_holy_man_effect_1
         trigger_event = {
-            id = dap_court_decision_events.0001
+            id = dap_court_decision_events.0003
             days = 7
         }
     }
