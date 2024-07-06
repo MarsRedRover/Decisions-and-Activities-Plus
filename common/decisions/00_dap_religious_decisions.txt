@@ -13,6 +13,9 @@
         gold = 200  # Cost of the forgery
         piety = 250
     }
+    is_valid = {
+        intrigue >= 16 # High intrigue required
+    }
     effect = {
         custom_tooltip = dap_forge_sayyid_docs_effect_1
         trigger_event = {

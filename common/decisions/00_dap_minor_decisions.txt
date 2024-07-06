@@ -11,15 +11,9 @@
         prestige = 150
     }
 
-    cooldown = { days = 5475 }
-
     is_shown = {
         is_landed = yes
-        highest_held_title_tier > tier_barony
-        OR = {
-            has_religion = religion:christianity_religion
-            has_religion = religion:islam_religion
-        }
+        highest_held_title_tier >= tier_county
         NOR = {
             exists = var:dap_amount_to_loan_jew
             exists = var:loan_holder
@@ -32,8 +26,8 @@
                 limit = { has_religion = religion:christianity_religion }
                 trigger_event = dap_minor_decision_events.0001
             }
-            else_if = {
-                limit = { has_religion = religion:islam_religion }
+            else = {
+                # limit = { has_religion = religion:islam_religion }
                 trigger_event = dap_minor_decision_events.0002
             }
         }
@@ -46,14 +40,45 @@
 
     ai_will_do = {
         base = 50
-        # if = {
-        #     limit = { has_religion = religion:christianity_religion }
-        #     ai_value_modifier = {
-        #         ai_zeal = -0.5
-        #     }
-        # }
+        ai_value_modifier = {
+            ai_zeal = -0.5
+        }
         ai_value_modifier = {
             ai_greed = 0.5
         }
+    }
+}
+
+dap_repay_loan_from_jewish_merchants_decision = {
+    picture = "gfx/interface/illustrations/decisions/decision_spend_money.dds"
+
+    desc = dap_repay_loan_from_jewish_merchants_desc
+    selection_tooltip = dap_repay_loan_from_jewish_merchants_tooltip
+
+    major = yes
+
+    ai_check_interval = 72
+
+    cost = {
+        gold = root.var:dap_amount_to_loan_jew
+    }
+
+    is_shown = {
+        has_character_flag = dap_borrow_from_jewish_merchants
+    }
+
+    effect = {
+        hidden_effect = {
+            trigger_event = dap_minor_decision_events.0003
+        }
+        custom_tooltip = dap_repay_loan_from_jewish_merchants_effect_tooltip
+    }
+
+    ai_potential = {
+        always = yes
+    }
+
+    ai_will_do = {
+        base = 50
     }
 }

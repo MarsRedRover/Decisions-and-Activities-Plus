@@ -66,3 +66,17 @@
  dap_minor_decision_events.0002.desc: "You can choose to borrow a moderate or large amount"
  dap_minor_decision_events.0002.a: "Borrow a moderate amount"
  dap_minor_decision_events.0002.b: "Borrow a monumental amount"
+
+#====================================
+# Repay Loan from Jewish Merchants
+#====================================
+ dap_repay_loan_from_jewish_merchants_decision: "Repay Loan from Jewish Merchants"
+ dap_repay_loan_from_jewish_merchants_decision_confirm: "Are you sure you want to repay the loan?"
+ dap_repay_loan_from_jewish_merchants_desc: "Repay the loan you took from Jewish merchants to restore your standing with the clergy and the Pope."
+ dap_repay_loan_from_jewish_merchants_tooltip: "Repaying the loan will cost you the borrowed amount plus interest, but will improve your relations with the clergy and the Pope."
+ dap_repay_loan_from_jewish_merchants_effect_tooltip: "You will repay the loan, restoring clergy opinion by +10 and the Pope's opinion by +30."
+
+# Minor Decision Events for Repaying Jewish Merchant Loans
+ dap_minor_decision_events.0003.title: "Repay Loan"
+ dap_minor_decision_events.0003.desc: "You have decided to repay the loan you took from Jewish merchants. This will restore your standing with the clergy and the Pope."
+ dap_minor_decision_events.0003.a: "Here's your gold!"

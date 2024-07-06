@@ -3,6 +3,12 @@
 #dap_forge_sayyid_docs
 # dap_religion_events.0001 - Forge Sayyid Documents
 
+
+##############################
+# Forge Sayyid Documents
+# by Marsonus
+##############################
+
 dap_religion_events.0001 = {
     type = character_event
     title = dap_religion_events.0001.title
@@ -15,7 +21,7 @@ dap_religion_events.0001 = {
         # add_trait = sayyid
     }
 
-    option = {
+    option = { # Proceed with forgery
         name = dap_religion_events.0001.a
         ai_chance = {
             base = 50
@@ -60,8 +66,12 @@ dap_religion_events.0001 = {
         }
     }
 
-    option = {
+    option = { # Do not forge documents
         name = dap_religion_events.0001.b
+        hidden_effect = { # Refund if decision taken
+            add_gold = 200
+            add_prestige = 250
+        }
         ai_chance = {
             base = 20
         }

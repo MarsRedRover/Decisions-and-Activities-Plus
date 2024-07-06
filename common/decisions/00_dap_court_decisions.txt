@@ -44,7 +44,7 @@ dap_invite_nobles_decision = {
     effect = {
         custom_tooltip = dap_invite_nobles_effect_1
         trigger_event = {
-            id = dap_court_decision_events.0001
+            id = dap_court_decision_events.0002
             days = 7
         }
     }

@@ -4,23 +4,31 @@ yearly_playable_pulse = {
     on_actions = { dap_yearly_interest_increase }
 }
 
+five_year_playable_pulse = {
+    on_actions = { dap_five_year_interest_check }
+}
+
 dap_yearly_interest_increase = {
     effect = {
         if = {
-            limit = { 
-                has_character_flag = dap_borrow_from_jewish_merchants 
-            }
+            limit = { has_character_flag = dap_borrow_from_jewish_merchants }
             change_variable = {
                 name = dap_amount_to_loan_jew
-                multiply = 1.3
-            }
-        }
-        else = {
-            change_variable = {
-                name = dap_amount_to_loan_jew
-                add = 60
+                multiply = 1.06
             }
         }
     }
 }
 
+dap_five_year_interest_check = {
+    effect = {
+        if = {
+            limit = { has_character_flag = dap_borrow_from_jewish_merchants }
+            add_character_flag = dap_amount_to_loan_jew_year_five
+        }
+        if = {
+            limit = { has_character_flag = dap_amount_to_loan_jew_year_five } 
+            add_character_flag = dap_amount_to_loan_jew_year_ten
+        }
+    }
+}
