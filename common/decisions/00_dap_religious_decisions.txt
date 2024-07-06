@@ -6,9 +6,9 @@
         root.faith.religion = religion:islam_religion   # Ensure the character follows an Islamic faith
         root = { NOT = { has_trait = sayyid } }
     }
-    cooldown = {
-        days = 3650
-    }
+    # cooldown = {
+    #     days = 3650
+    # }
     cost = {
         gold = 200  # Cost of the forgery
         piety = 250
@@ -17,7 +17,7 @@
         custom_tooltip = dap_forge_sayyid_docs_effect_1
         trigger_event = {
             id = dap_religion_events.0001
-            days = 7
+            days = 14
         }
     }
     ai_check_interval = 240

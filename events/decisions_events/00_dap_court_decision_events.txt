@@ -227,7 +227,6 @@ dap_court_decision_events.0001 = {
     }
 }
 
-
 ##############################
 # Invite Nobles
 # by Marsonus
@@ -285,7 +284,6 @@ dap_court_decision_events.0002 = {
         }
     }
 }
-
 
 ##############################
 # Invite Holy Man
