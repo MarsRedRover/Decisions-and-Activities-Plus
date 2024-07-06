@@ -77,6 +77,6 @@
  dap_repay_loan_from_jewish_merchants_effect_tooltip: "You will repay the loan, restoring clergy opinion by +10 and the Pope's opinion by +30."
 
 # Minor Decision Events for Repaying Jewish Merchant Loans
- dap_minor_decision_events.0003.title: "Repay Loan"
- dap_minor_decision_events.0003.desc: "You have decided to repay the loan you took from Jewish merchants. This will restore your standing with the clergy and the Pope."
- dap_minor_decision_events.0003.a: "Here's your gold!"
+ dap_major_decision_events.0001.title: "Repay Loan"
+ dap_major_decision_events.0001.desc: "You have decided to repay the loan you took from Jewish merchants. This will restore your standing with the clergy and the Pope."
+ dap_major_decision_events.0001.a: "Here's your gold!"

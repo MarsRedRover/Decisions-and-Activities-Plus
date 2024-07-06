@@ -1,0 +1,63 @@
+﻿namespace = dap_major_decision_events
+
+#dap_repay_loan_from_jewish_merchants_decision
+# dap_major_decision_events.0001 - Repay Loan from Jewish Merchants
+
+##############################
+# Repay Loan from Jewish Merchants
+# by Marsonus
+##############################
+
+dap_major_decision_events.0001 = {
+    type = character_event
+    title = dap_major_decision_events.0001.title
+    desc = dap_major_decision_events.0001.desc
+    theme = stewardship
+
+    left_portrait = {
+        character = root
+        animation = dismissal
+    }
+    right_portrait = {
+        character = scope:lender
+        animation = steward
+    }
+    immediate = {
+        create_character = {
+            template = dap_jewish_merchant_character
+            location = root.capital_province
+            save_scope_as = lender
+        }
+    }
+
+    option = {
+        name = dap_major_decision_events.0001.a
+        ai_chance = {
+            base = 100
+        }
+        root = {
+            pay_short_term_gold = {
+                target = scope:lender
+                gold = root.var:dap_amount_to_loan_jew
+            }
+        }
+        hidden_effect = {
+            remove_variable = dap_amount_to_loan_jew
+            remove_variable = dap_years_since_loan
+			remove_character_flag = dap_borrow_from_jewish_merchants
+            if = {
+                limit = { has_character_flag = dap_amount_to_loan_jew_standing_neutral }
+                remove_character_flag = dap_amount_to_loan_jew_standing_neutral
+            }
+            if = {
+                limit = { has_character_flag = dap_amount_to_loan_jew_standing_unfavorable }
+                remove_character_flag = dap_amount_to_loan_jew_standing_unfavorable
+            }
+            if = {
+                limit = { has_character_flag = dap_amount_to_loan_jew_standing_hostile }
+                remove_character_flag = dap_amount_to_loan_jew_standing_hostile
+            }
+            scope:lender = { death = { death_reason = death_disappearance } }
+        }
+    }
+}

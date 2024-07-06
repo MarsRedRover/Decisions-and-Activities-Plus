@@ -48,37 +48,3 @@
         }
     }
 }
-
-dap_repay_loan_from_jewish_merchants_decision = {
-    picture = "gfx/interface/illustrations/decisions/decision_spend_money.dds"
-
-    desc = dap_repay_loan_from_jewish_merchants_desc
-    selection_tooltip = dap_repay_loan_from_jewish_merchants_tooltip
-
-    major = yes
-
-    ai_check_interval = 72
-
-    cost = {
-        gold = root.var:dap_amount_to_loan_jew
-    }
-
-    is_shown = {
-        has_character_flag = dap_borrow_from_jewish_merchants
-    }
-
-    effect = {
-        hidden_effect = {
-            trigger_event = dap_minor_decision_events.0003
-        }
-        custom_tooltip = dap_repay_loan_from_jewish_merchants_effect_tooltip
-    }
-
-    ai_potential = {
-        always = yes
-    }
-
-    ai_will_do = {
-        base = 50
-    }
-}

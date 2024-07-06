@@ -66,12 +66,10 @@ Descriptions of minor decisions that, while less impactful individually, can sti
 - Restore the high priesthood (Judaism): Reinstate the Jewish high priesthood.
 - Delve into the classics: Promote the study of classical works.
 - Form honor guard: Establish an elite unit of personal bodyguards.
+- ~~Repay money to Jewish merchants: Pay back the loan to Jewish merchants.~~
 
 ### [Minor Decisions]
-- Borrow gold from Jewish merchants: Take a loan from Jewish merchants.
-    - Repay money to Jewish merchants: Pay back the loan to Jewish merchants.
-- Borrow money from Radhanite merchants (Judaism): Take a loan from Radhanite Jewish merchants.
-    - Repay money to Radhanite merchants: Pay back the loan to the Radhanite merchants.
+- ~~Borrow gold from Jewish merchants: Take a loan from Jewish merchants.~~
 - Sadaqah (Voluntary Charity): Donate money voluntarily as an act of charity.
 - Expel the Jews: Forcefully expel the Jewish population from your realm.
 - Welcome the Jews: Invite and settle Jewish people in your lands.
