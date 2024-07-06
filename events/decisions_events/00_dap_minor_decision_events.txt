@@ -130,7 +130,7 @@ dap_minor_decision_events.0002 = {
             set_variable = {
 				name = dap_amount_to_loan_jew
 				value = root.massive_gold_value
-				days = yes
+				# days = yes
 			}
 			add_character_flag = {
 				flag = dap_borrow_from_jewish_merchants

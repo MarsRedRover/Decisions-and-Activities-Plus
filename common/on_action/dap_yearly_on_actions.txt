@@ -1,18 +1,26 @@
 ﻿# Called from code once a year for "playable" (count+) characters.
 # Root is the character
 yearly_playable_pulse = {
-    # if = {
-    #     limit = { exists = root.var:dap_amount_to_loan_jew }
-    #     change_variable = {
-    #         name = dap_amount_to_loan_jew
-    #         add = root.var:dap_amount_to_loan_jew * 0.3
-    #     }
-    # }
-	root = {
-		change_variable = {
-			name = dap_amount_to_loan_jew
-			multiply = 0.3
-			# add = root.var:dap_amount_to_loan_jew * 0.3
-		}
-	}
+    on_actions = { dap_yearly_interest_increase }
 }
+
+dap_yearly_interest_increase = {
+    effect = {
+        if = {
+            limit = { 
+                has_character_flag = dap_borrow_from_jewish_merchants 
+            }
+            change_variable = {
+                name = dap_amount_to_loan_jew
+                multiply = 1.3
+            }
+        }
+        else = {
+            change_variable = {
+                name = dap_amount_to_loan_jew
+                add = 60
+            }
+        }
+    }
+}
+
