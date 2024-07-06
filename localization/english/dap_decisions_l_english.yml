@@ -35,7 +35,7 @@
   dap_invite_holy_man_decision_confirm: "Are you sure you want to invite a holy man?"
 
  # Borrow from Jewish Merchants
-  dap_borrow_from_jewish_merchants_decision: "Borrow from Jewish Merchants"
+  dap_borrow_from_jewish_merchants_decision: "Borrow Gold from Jewish Merchants"
   dap_borrow_from_jewish_merchants_desc: "Borrow money from Jewish merchants to support your realm, but beware of the repercussions."
   dap_borrow_from_jewish_merchants_tooltip: "Borrowing money from Jewish merchants will cost you 100 Piety and 150 Prestige."
   borrow_from_jewish_merchants_condition: "Your faith must have a Holy Order with a leader possessing sufficient gold."

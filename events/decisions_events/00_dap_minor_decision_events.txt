@@ -18,34 +18,151 @@ dap_minor_decision_events.0001 = {
         animation = disapproval
     }
     immediate = {
-        # if = {
-        #     limit = { has_character_flag = borrow_from_holy_order }
-        #     character = {
-        #         faith = catholic
-        #         title = "k_papal_state"
-        #         opinion_modifier = {
-        #             who = root
-        #             modifier = -30
-        #             years = 10
-        #         }
-        #     }
-        # }
     }
 
+    ### Low Amount 
     option = {
         name = dap_minor_decision_events.0001.a
         ai_chance = {
             base = 100
         }
-        reverse_add_opinion = {
-            modifier = angry_opinion
-            target = root.realm_priest
-            opinion = -10
+        if = {
+            limit = { has_religion = religion:christianity_religion }
+            reverse_add_opinion = {
+                modifier = angry_opinion
+                target = root.realm_priest
+                opinion = -10
+            }
+            reverse_add_opinion = {
+                modifier = angry_opinion
+                target = root.faith.religious_head
+                opinion = -30
+            }
         }
-        reverse_add_opinion = {
-            modifier = angry_opinion
-            target = root.faith.religious_head
-            opinion = -30
+        else_if = {
+            limit = { has_religion = religion:islam_religion }
+        }
+    }
+    ### Medium Amount
+    option = {
+        name = dap_minor_decision_events.0001.b
+        if = {
+            limit = { has_religion = religion:christianity_religion }
+            reverse_add_opinion = {
+                modifier = angry_opinion
+                target = root.realm_priest
+                opinion = -20
+            }
+            reverse_add_opinion = {
+                modifier = angry_opinion
+                target = root.faith.religious_head
+                opinion = -40
+            }
+        }
+        ai_chance = {
+            base = 100
+        }
+    }
+    ### Large Amount
+    option = {
+        name = dap_minor_decision_events.0001.c
+        if = {
+            limit = { has_religion = religion:christianity_religion }
+            reverse_add_opinion = {
+                modifier = angry_opinion
+                target = root.realm_priest
+                opinion = -20
+            }
+            reverse_add_opinion = {
+                modifier = angry_opinion
+                target = root.faith.religious_head
+                opinion = -40
+            }
+        }
+        ai_chance = {
+            base = 100
+        }
+    }
+    ### Don't borrow any
+    option = {
+        name = dap_minor_decision_events.0001.d 
+        ai_chance = {
+            base = 50
         }
     }
 }
+
+dap_minor_decision_events.0002 = {
+    type = character_event
+    title = dap_minor_decision_events.0002.title
+    desc = dap_minor_decision_events.0002.desc
+    theme = stewardship
+
+    left_portrait = {
+        character = root
+        animation = personality_greedy
+    }
+    right_portrait = {
+        character = scope:lender
+        animation = steward
+    }
+    immediate = {
+        create_character = {
+            template = dap_jewish_merchant_character
+            location = root.capital_province
+            save_scope_as = lender
+        }
+    }
+
+    ### Borrow money
+    option = {
+        name = dap_minor_decision_events.0002.a
+        ai_chance = {
+            base = 100
+        }
+        scope:lender = {
+            pay_short_term_gold = {
+                target = root
+                gold = root.massive_gold_value
+            }
+        }
+        hidden_effect = {
+            set_variable = {
+				name = dap_amount_to_loan_jew
+				value = root.massive_gold_value
+				days = yes
+			}
+			add_character_flag = {
+				flag = dap_borrow_from_jewish_merchants
+				days = 3560
+			}
+            scope:lender = { death = { death_reason = death_disappearance } }
+        }
+    }
+    ### Borrow a large sum
+    option = {
+        name = dap_minor_decision_events.0002.b
+        ai_chance = {
+            base = 50
+        }
+        scope:lender = {
+            pay_short_term_gold = {
+                target = root
+                gold = root.monumental_gold_value
+            }
+        }
+        hidden_effect = { 
+            set_variable = {
+				name = dap_amount_to_loan_jew
+				value = root.monumental_gold_value
+				days = yes
+			}
+			add_character_flag = {
+				flag = dap_borrow_from_jewish_merchants
+				days = 3560
+			}
+            scope:lender = { death = { death_reason = death_disappearance } }
+        }
+    }
+}
+

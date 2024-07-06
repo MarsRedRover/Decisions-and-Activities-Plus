@@ -1,0 +1,86 @@
+﻿dap_jewish_merchant_character = {
+	age = { 25 60 }
+
+	random_traits_list = {
+		count = 1
+        education_stewardship_1 = {}
+		education_stewardship_2 = {}
+		education_stewardship_3 = {}
+		education_stewardship_4 = {}
+	}
+
+	random_traits = yes
+
+	# culture = culture:sephardi
+    random_culture = {
+        culture:ashkenazi = {
+            trigger = {
+                NOT = {
+                    root.faith = { religion = { is_in_family = rf_pagan } }
+                }
+                root.capital_province = {
+                    OR = {
+                        geographical_region = world_europe
+                        geographical_region = world_asia_minor
+                    }
+                    NOT = {
+                        geographical_region = world_europe_west_iberia
+                    }
+                }
+            }
+        }
+        culture:sephardi = {
+            root.capital_province = {
+                geographical_region = world_europe_west_iberia
+            }
+        }
+        culture:radhanite = {
+            trigger = {
+                root.capital_province = {
+                    OR = {
+                        geographical_region = world_steppe
+                        geographical_region = world_india
+                    }
+                }
+            }
+        }
+        culture:kochinim = {
+            trigger = {
+                root.capital_province = {
+                    geographical_region = world_india
+                }
+            }
+        }
+        culture:bavlim = {
+            trigger = {
+                root.capital_province = {
+                    OR = {
+                        geographical_region = world_middle_east
+                        geographical_region = world_middle_east_persia
+                        geographical_region = world_africa_north
+                    }
+                }
+            }
+        }
+    }
+	faith = faith:kabarism # temporary, see after_creation effect below
+
+	gender_female_chance = 0
+
+	stewardship = {
+		min_template_high_skill
+		max_template_high_skill
+	}
+
+	after_creation = {
+		religion:judaism_religion = {
+			random_faith = {
+				limit = {
+					is_mainstream_jewish_faith = yes
+				}
+				save_scope_as = lender_faith
+			}
+		}
+		set_character_faith = scope:lender_faith
+	}
+}
