@@ -30,8 +30,10 @@
             }
         }
         culture:sephardi = {
-            root.capital_province = {
-                geographical_region = world_europe_west_iberia
+            trigger = {
+                root.capital_province = {
+                    geographical_region = world_europe_west_iberia
+                }
             }
         }
         culture:radhanite = {

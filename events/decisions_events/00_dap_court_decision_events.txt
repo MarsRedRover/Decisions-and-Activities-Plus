@@ -239,7 +239,6 @@ dap_court_decision_events.0002 = {
             save_scope_as = target
             age = { 19 30 }
             location = root.location
-            education = stewardship_education
             random_traits_list = {
                 count = { 1 3 }
                 education_stewardship_1 = { weight = { base = 10 } }
@@ -293,7 +292,6 @@ dap_court_decision_events.0003 = {
             save_scope_as = target
             age = { 19 30 }
             location = root.location
-            education = learning_education
             random_traits_list = {
                 count = { 1 3 }
                 education_learning_1 = { weight = { base = 10 } }

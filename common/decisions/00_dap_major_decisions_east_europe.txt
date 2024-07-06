@@ -1,11 +1,11 @@
-dap_found_latin_empire_decision = {
+﻿dap_found_latin_empire_decision = {
 	picture = "gfx/interface/illustrations/decisions/decision_found_empire.dds"
 	major = yes
 
 	ai_check_interval = 120
 
 	desc = dap_found_latin_empire_decision_desc
-	selection_tooltip = found_kingdom_of_bosnia_decision_tooltip
+	selection_tooltip = dap_found_latin_empire_decision_tooltip
 
 	is_shown = {
 		is_ruler = yes
@@ -40,7 +40,7 @@ dap_found_latin_empire_decision = {
 		NOT = {	#You can only do it once.
 			is_target_in_global_variable_list = {
 				name = unavailable_unique_decisions
-				target = flag:flag_founded_kingdom_of_bosnia
+				target = flag:flag_founded_latin_empire
 			}
 		}
 		OR = {

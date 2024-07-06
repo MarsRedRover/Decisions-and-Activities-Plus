@@ -23,41 +23,68 @@ dap_minor_decision_events.0001 = {
     ### Low Amount 
     option = {
         name = dap_minor_decision_events.0001.a
+        reverse_add_opinion = {
+            modifier = angry_opinion
+            target = root.realm_priest
+            opinion = -5
+        }
+        reverse_add_opinion = {
+            modifier = angry_opinion
+            target = root.faith.religious_head
+            opinion = -10
+        }
+        scope:lender = {
+            pay_short_term_gold = {
+                target = root
+                gold = root.small_gold_value
+            }
+        }
+        hidden_effect = {
+            set_variable = {
+				name = dap_amount_to_loan_jew
+				value = root.small_gold_value
+				# days = yes
+			}
+			add_character_flag = {
+				flag = dap_borrow_from_jewish_merchants
+				days = 3560
+			}
+            scope:lender = { death = { death_reason = death_disappearance } }
+        }
         ai_chance = {
             base = 100
-        }
-        if = {
-            limit = { has_religion = religion:christianity_religion }
-            reverse_add_opinion = {
-                modifier = angry_opinion
-                target = root.realm_priest
-                opinion = -10
-            }
-            reverse_add_opinion = {
-                modifier = angry_opinion
-                target = root.faith.religious_head
-                opinion = -30
-            }
-        }
-        else_if = {
-            limit = { has_religion = religion:islam_religion }
         }
     }
     ### Medium Amount
     option = {
         name = dap_minor_decision_events.0001.b
-        if = {
-            limit = { has_religion = religion:christianity_religion }
-            reverse_add_opinion = {
-                modifier = angry_opinion
-                target = root.realm_priest
-                opinion = -20
+        reverse_add_opinion = {
+            modifier = angry_opinion
+            target = root.realm_priest
+            opinion = -10
+        }
+        reverse_add_opinion = {
+            modifier = angry_opinion
+            target = root.faith.religious_head
+            opinion = -20
+        }
+        scope:lender = {
+            pay_short_term_gold = {
+                target = root
+                gold = root.medium_gold_value
             }
-            reverse_add_opinion = {
-                modifier = angry_opinion
-                target = root.faith.religious_head
-                opinion = -40
-            }
+        }
+        hidden_effect = {
+            set_variable = {
+				name = dap_amount_to_loan_jew
+				value = root.medium_gold_value
+				# days = yes
+			}
+			add_character_flag = {
+				flag = dap_borrow_from_jewish_merchants
+				days = 3560
+			}
+            scope:lender = { death = { death_reason = death_disappearance } }
         }
         ai_chance = {
             base = 100
@@ -66,28 +93,71 @@ dap_minor_decision_events.0001 = {
     ### Large Amount
     option = {
         name = dap_minor_decision_events.0001.c
-        if = {
-            limit = { has_religion = religion:christianity_religion }
-            reverse_add_opinion = {
-                modifier = angry_opinion
-                target = root.realm_priest
-                opinion = -20
+        reverse_add_opinion = {
+            modifier = angry_opinion
+            target = root.realm_priest
+            opinion = -15
+        }
+        reverse_add_opinion = {
+            modifier = angry_opinion
+            target = root.faith.religious_head
+            opinion = -30
+        }
+        scope:lender = {
+            pay_short_term_gold = {
+                target = root
+                gold = root.large_gold_value
             }
-            reverse_add_opinion = {
-                modifier = angry_opinion
-                target = root.faith.religious_head
-                opinion = -40
-            }
+        }
+        hidden_effect = {
+            set_variable = {
+				name = dap_amount_to_loan_jew
+				value = root.large_gold_value
+				# days = yes
+			}
+			add_character_flag = {
+				flag = dap_borrow_from_jewish_merchants
+				days = 3560
+			}
+            scope:lender = { death = { death_reason = death_disappearance } }
         }
         ai_chance = {
             base = 100
         }
     }
-    ### Don't borrow any
+    ### Monumental Amount
     option = {
-        name = dap_minor_decision_events.0001.d 
+        name = dap_minor_decision_events.0001.d
+        reverse_add_opinion = {
+            modifier = angry_opinion
+            target = root.realm_priest
+            opinion = -20
+        }
+        reverse_add_opinion = {
+            modifier = angry_opinion
+            target = root.faith.religious_head
+            opinion = -40
+        }
+        scope:lender = {
+            pay_short_term_gold = {
+                target = root
+                gold = root.monumental_gold_value
+            }
+        }
+        hidden_effect = {
+            set_variable = {
+				name = dap_amount_to_loan_jew
+				value = root.monumental_gold_value
+				# days = yes
+			}
+			add_character_flag = {
+				flag = dap_borrow_from_jewish_merchants
+				days = 3560
+			}
+            scope:lender = { death = { death_reason = death_disappearance } }
+        }
         ai_chance = {
-            base = 50
+            base = 100
         }
     }
 }
