@@ -80,7 +80,7 @@ dap_unify_islam_decision = { # Appoint a righteous caliph
 		# Check some religious stuff; namely that you're the correct religion and your existing-HoF doesn't share your faith.
 		religion = religion:islam_religion
 		exists = faith.religious_head
-		NOT = { faith = faith.religious_head.faith }
+		# NOT = { faith = faith.religious_head.faith }
 		# And filter out anyone who'd make this unreliable.
 		OR = {
 			government_has_flag = government_is_tribal
@@ -89,7 +89,17 @@ dap_unify_islam_decision = { # Appoint a righteous caliph
 		}
 	}
 
-    is_valid = {}
+    is_valid = {
+        AND = {
+            completely_controls = title:c_mecca
+            completely_controls = title:c_kufa
+            completely_controls = title:d_mecca
+		    completely_controls = title:d_medina
+		    completely_controls = title:d_shammar
+		    completely_controls = title:d_palestine
+		    completely_controls = title:d_oultrejourdain
+        }
+    }
 
 	is_valid_showing_failures_only = {
 		# is_available_adult = yes
