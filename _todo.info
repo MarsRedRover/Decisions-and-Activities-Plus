@@ -1,6 +1,5 @@
 Finish:
-Latin Empire
-Jewish Loans
+- Jewish Loans:
     - If loan year is 5, a warning is given to pay the loan.
         Merchant template char created, gains a hook on loan holder. 
         Merchant char starts 1 hook scheme. 

@@ -1,7 +1,7 @@
 ﻿namespace = dap_minor_decision_events
 
 #dap_borrow_from_jewish_merchants_decision
-# dap_minor_decision_events.0001 - Borrow from Jewish Merchants
+# dap_minor_decision_events.0001:0002 - Borrow from Jewish Merchants
 
 
 ##############################
