@@ -31,3 +31,128 @@
         base = 50
     }
 }
+
+dap_unify_islam_decision = { # Appoint a righteous caliph
+	picture = "gfx/interface/illustrations/decisions/dap_decision_unify_islam.dds"
+	major = yes
+
+	ai_check_interval = 24
+
+	# title = {
+	# 	first_valid = {
+	# 		triggered_desc = {
+	# 			trigger = { faith = faith:mutazila }
+	# 			desc = appoint_a_righteous_caliph_decision_mutazila_variant 
+	# 		}
+	# 		triggered_desc = {
+	# 			trigger = { 
+	# 				culture = { has_cultural_pillar = heritage_iranian } 
+	# 			}
+	# 			desc = appoint_a_righteous_caliph_decision_general_iranian_variant
+	# 		}
+	# 		desc = appoint_a_righteous_caliph_decision
+	# 	}
+	# }
+
+	desc = {
+		# first_valid = {
+		# 	triggered_desc = {
+		# 		trigger = { faith = faith:mutazila }
+		# 		desc = appoint_a_righteous_caliph_decision_mutazila_variant_desc 
+		# 	}
+		# 	triggered_desc = {
+		# 		trigger = { 
+		# 			culture = { has_cultural_pillar = heritage_iranian } 
+		# 		}
+		# 		desc = appoint_a_righteous_caliph_decision_general_iranian_variant_desc 
+		# 	}
+		# 	desc = appoint_a_righteous_caliph_decision_desc
+		# }
+	}
+
+	selection_tooltip = appoint_a_righteous_caliph_decision_tooltip
+
+
+	is_shown = {
+		# Standard filter checks.
+		is_landed = yes
+		exists = dynasty
+		# Check some religious stuff; namely that you're the correct religion and your existing-HoF doesn't share your faith.
+		religion = religion:islam_religion
+		exists = faith.religious_head
+		NOT = { faith = faith.religious_head.faith }
+		# And filter out anyone who'd make this unreliable.
+		OR = {
+			government_has_flag = government_is_tribal
+			government_has_flag = government_is_feudal
+			government_has_flag = government_is_clan
+		}
+	}
+
+    is_valid = {}
+
+	is_valid_showing_failures_only = {
+		# is_available_adult = yes
+		# # Has to be around for the ceremony.
+		# not = { exists = involved_activity }
+		# has_contagious_deadly_disease_trigger = no
+		# # Has to be a valid priestly gender for the current faith.
+		# faith = { has_allowed_gender_for_clergy = root }
+	}
+
+	effect = {
+		# save_scope_as = founder
+		# faith.religious_head = { save_scope_as = old_caliph }
+		# show_as_tooltip = { appoint_a_righteous_caliph_scripted_effect = yes }
+		# # Notify co-faithists; we do this first so we can sort the feed message for how many did/didn't convert.
+		# faith = {
+		# 	every_faith_ruler = {
+		# 		limit = {
+		# 			highest_held_title_tier >= tier_county
+		# 			NOT = { this = root }
+		# 		}
+		# 		trigger_event = religious_decision.0602
+		# 	}
+		# }
+		# # Now notify other players.
+		# every_player = {
+		# 	limit = {
+		# 		OR = {
+		# 			religion = religion:islam_religion
+		# 			any_neighboring_and_across_water_top_liege_realm_owner = { this = root }
+		# 			any_liege_or_above = { religion = religion:islam_religion }
+		# 		}
+		# 		# Exempt same-faith characters, who already got an event.
+		# 		NOT = { faith = root.faith }
+		# 	}
+		# 	# Players who share the faith get 
+		# 	trigger_event = religious_decision.0603
+		# }
+		# # Finally, we trigger the main conversion.
+		# trigger_event = religious_decision.0601
+	}
+
+	cost = {
+		gold = 500
+		piety = 1000
+	}
+
+	ai_potential = {
+		# # Must be independent.
+		# is_independent_ruler = yes
+		# # Should have a decent piety level.
+		# piety_level >= high_piety_level
+		# OR = {
+		# 	# Zealous people think they know better.
+		# 	has_trait = zealous
+		# 	# And cynics want that power for themselves.
+		# 	has_trait = cynical
+		# 	# We guide Muwalladi towards this at the first opportunity.
+		# 	faith = faith:muwalladi
+		# }
+	}
+
+	ai_will_do = {
+		base = 100
+	}
+}
