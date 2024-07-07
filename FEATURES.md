@@ -131,6 +131,7 @@ Descriptions of decisions that aim to unify different regions, cultures, or fact
 - Adopt faith of other clan/tribe: Convert to the religion of another clan or tribe.
 - Mardavij's Legacy (Zoroastrian): Follow in the footsteps of Mardavij and promote Zoroastrianism.
 - Celebrate Passover (Judaism): Observe the Jewish festival of Passover.
+- Castilian/Spanish Inquisition:
 
 ### [Activity Decisions]
 
