@@ -30,7 +30,6 @@ Descriptions of minor decisions that, while less impactful individually, can sti
 - Furisiyaa Tournament: Organize a Furisiyaa tournament, an Islamic chivalric contest to display martial skills and chivalry.
 
 ### [Major Decisions]
-- Unify India: Unite the diverse regions of India under a single empire.
 - Unify Islam: Bring together the Islamic world under one leadership.
 - Restore Eastern Rome: Rebuild and restore the glory of the Eastern Roman Empire.
 - Restore Western Rome: Reconstruct the Western Roman Empire to its former might.

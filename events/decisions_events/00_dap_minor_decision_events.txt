@@ -3,6 +3,8 @@
 #dap_borrow_from_jewish_merchants_decision
 # dap_minor_decision_events.0001:0002 - Borrow from Jewish Merchants
 
+#dap_raise_tribal_army_decision
+# dap_minor_decision_events.0003 - Raise Tribal Army
 
 ##############################
 # Borrow Gold from Jewish Merchants (Christian Ruler)
@@ -249,5 +251,28 @@ dap_minor_decision_events.0002 = {
 			add_character_flag = dap_borrow_from_jewish_merchants
             scope:lender = { death = { death_reason = death_disappearance } }
         }
+    }
+}
+
+##############################
+# Raise Tribal Army
+# by Marsonus
+##############################
+
+dap_minor_decision_events.0003 = {
+    type = character_event
+    title = dap_minor_decision_events.0003.title
+    desc = dap_minor_decision_events.0003.desc
+    theme = war
+    
+    immediate = {
+    }
+
+    option = {
+        name = dap_minor_decision_events.0003.a
+        ai_chance = {
+            base = 100
+        }
+        hidden_effect = {}
     }
 }
