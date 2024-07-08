@@ -1,0 +1,51 @@
+namespace = dap_holy_order 
+
+#You donate gold to a holy order
+#
+dap_holy_order.0001 = {
+	type = letter_event
+	opening = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					piety_level < 1
+				}
+				desc = char_interaction.0001.opening_low_piety
+			}
+			desc = holy_order.0200.desc_opening
+		}
+	}
+	desc = holy_order.0200.desc
+	sender = scope:recipient
+
+	option = {
+		name = holy_order.0200.a
+		show_as_tooltip = {
+			scope:recipient = {
+				pay_short_term_gold = {
+					target = root
+					gold = root.holy_order_gold_value
+				}
+			}
+		}
+		set_up_loan_effect = {
+			LENDER = scope:recipient
+			AMOUNT = holy_order_gold_value
+		}
+		#Set up extra variable to track time
+		scope:recipient = {
+			set_variable = {
+				name = years_since_loan
+				value = 0
+			}
+		}
+	}
+
+	option = { #Your piety level is too low :( sinner!
+		name = holy_order.0200.b
+		trigger = {
+			piety_level < 1
+		}
+		show_as_unavailable = { piety_level < 1 }
+	}
+}

@@ -1,0 +1,73 @@
+﻿dap_donate_to_holy_order_decision = {
+	picture = "gfx/interface/illustrations/decisions/decision_spend_money.dds"
+
+	desc = dap_donate_to_holy_order_decision_desc
+	selection_tooltip = dap_donate_to_holy_order_decision_tooltip
+
+	ai_check_interval = 72
+
+	cost = {
+		gold = 300
+	}
+
+	cooldown = { days = 1826 } # 3 years
+
+	is_shown = {
+		is_landed = yes
+		highest_held_title_tier > tier_barony
+		faith = {
+			any_faith_holy_order = { #Your faith must have a Holy Order
+				always = yes
+			}
+		}
+	}
+
+	is_valid_showing_failures_only = {
+		is_available = yes
+		# custom_description = {
+		# 	text = dap_donate_to_holy_order_decision_condition
+		# 	faith = {
+		# 		any_faith_holy_order = {
+		# 			leader = {
+		# 				gold >= holy_order_gold_value
+		# 			}
+		# 		}
+		# 	}
+		# }
+	}
+
+	effect = {
+		hidden_effect = {
+			add_character_flag = {
+				flag = dap_donated_to_holy_order
+				days = 1826
+			}
+			faith = {
+				random_faith_holy_order = {
+					leader = {
+						save_scope_as = recipient
+					}
+					save_scope_as = order
+				}
+			}
+			trigger_event = dap_holy_order.0001
+		}
+		custom_tooltip = dap_donate_to_holy_order_decision_effect_tooltip
+
+	}
+	
+	ai_potential = {
+		always = yes
+	}
+
+	ai_will_do = {
+		base = 50
+        # Flip borrow gold from holy order values
+		ai_value_modifier = {
+			ai_zeal = 0.5
+		}
+		ai_value_modifier = {
+			ai_greed = -0.5
+		}
+	}
+}

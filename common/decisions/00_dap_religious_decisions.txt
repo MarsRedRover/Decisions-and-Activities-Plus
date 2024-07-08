@@ -88,31 +88,72 @@ dap_unify_islam_decision = { # Unify Islam under one sect
 			government_has_flag = government_is_clan
 		}
 	}
-
+		# title:d_masmudi.holder = {
+		# 	is_landed = no
+		# }
     is_valid = {
 		is_independent_ruler = yes
 		root.faith.religious_head = root
+		trigger_if = {
+			limit = { root = { title:}}
+		}
+		# trigger_if = {
+		# 	limit = {
+		# 		AND = {
+		# 			exists = title:d_shiite.holder
+		# 			title:d_shiite.holder = root
+		# 		}
+		# 	}
+		# 	title:d_sunni.holder = { is_landed = no }
+		# }
+		# trigger_if = {
+		# 	# limit = { title:d_sunni.holder = root }
+		# 	NOT = { exists = title:d_shiite }
+		# 	# title:d_shiite.holder = { is_landed = no }
+		# }
+		# if = { limit = { title:d_shiite.holder = root }
+		# 	title:d_sunni.holder = { is_landed = no }
+		# }
+		# if = { limit = { title:d_sunni.holder = root }
+		# 	title:d_shiite.holder = { is_landed = no }
+		# }
 		trigger_if = {
 			limit = {
 				is_ai = no
 			}
 			piety_level >= high_piety_level
 		}
-		AND = {
-			# completely_controls_region = world_middle_east_arabia
-			completely_controls_region = custom_polabia
-		}
-		# custom_tooltip = {
-		# 	text = polabia_must_be_hre_culture_tt
-		# 	any_county_in_region = {
-		# 		region = custom_polabia
-		# 		# At least half.
-		# 		count >= 12
-		# 		OR = {
-		# 			culture = root.culture
-		# 			culture = title:e_hre.holder.culture
+		# AND = {
+		# 	# completely_controls_region = world_middle_east_arabia
+		# 	completely_controls_region = custom_polabia
+		# }
+		# trigger_if = {
+		# 	limit = { exists = title:d_shiite.holder }
+		# 	title:d_shiite.holder = { is_landed = no } #If he fled elsewhere, it cannot be done, the Pope must be landless.
+		# 	title:d_shiite.holder = { is_at_war = no } #Shouldn't be possible during a Crusade
+		# }
+		# trigger_if = {
+		# 	limit = { faith = faith:ismaili }
+		# 	title:d_shiite.holder = { is_landed = no } #If he fled elsewhere, it cannot be done, the Pope must be landless.
+		# 	title:d_shiite.holder = { is_at_war = no } #Shouldn't be possible during a Crusade
+		# }
+		# trigger_if = {
+		# 	religion:islam_religion = {
+		# 		every_faith = {
+		# 			if = { limit = { exists = religious_head }
+		# 				faith.religious_head = { is_landed = no }
+		# 			}
 		# 		}
 		# 	}
+		# }
+		# religion:islam_religion = {
+		# 	any_faith = {
+		# 		# limit = { exists = religious_head }
+		# 		religious_head = { is_landed = no }
+		# 	}
+		# }
+		# title:d_masmudi.holder = {
+		# 	is_landed = no
 		# }
 
 		# AND = {
