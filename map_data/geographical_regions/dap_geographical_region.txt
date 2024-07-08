@@ -1,6 +1,0 @@
-﻿custom_rashidun = {
-	duchies = {
-		# Include all territories of the Rashidun Caliphate
-		d_latium # Example duchy
-	}
-}

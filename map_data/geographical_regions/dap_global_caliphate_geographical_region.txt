@@ -1,0 +1,58 @@
+﻿custom_global_caliphate = {
+	duchies = {
+		d_castilla
+		d_cantabria
+		d_aragon
+		d_barcelona
+		d_valencia
+		d_mallorca
+		d_navarra
+		d_viscaya
+		d_leon
+		d_asturias
+		d_galicia
+		d_porto
+		d_coimbra
+		d_beja
+		d_algarve
+		d_cordoba
+		d_murcia
+		d_granada
+		d_sevilla
+		d_badajoz
+		d_toledo
+	}
+}
+
+custom_islam_holy_sites = {
+	duchies = {
+		# Islam Holy Sites
+		d_mecca
+		d_palestine
+		d_medina
+
+		# Shia Holy Sites
+		d_damascus
+		d_kufa
+
+		# Sunni Holy Sites
+		d_sinai
+		d_baghdad
+		d_soghd # Maturidism
+		d_cordoba # Muwalladism
+		d_fes # Muwalladism
+		d_marrakesh # Almohadism
+
+		# Muhakkima Holy Sites
+		d_basra
+		d_oman
+		d_bahrain # Najdatism
+		d_yamama # Najdatism
+		d_palmyra # Azraqism
+		d_tafilalt # Sufrism
+
+		# Zandaqa Holy Sites
+		d_lebanon
+		d_herat
+	}
+}
